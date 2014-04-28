@@ -1,0 +1,43 @@
+{
+  "name": "hello-world",
+  "description": "The coolest cortex module",
+  "version": "0.1.0",
+  "homepage": "https://github.com/cortexjs/samples",
+  "author": {
+    "name": "ltebean",
+    "email": "yucong1118@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cortexjs/samples.git"
+  },
+  "bugs": {
+    "url": "https://github.com/cortexjs/samples/issues"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/cortexjs/samples/blob/master/LICENSE-MIT"
+    }
+  ],
+  "engines": {
+    "node": ">= 0.10.0"
+  },
+  "scripts": {
+    "test": "grunt test"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.4"
+  },
+  "keywords": [],
+  "cortex": {
+    "devDependencies": {
+      "neuron": "~3.5.6"
+    },
+    "asyncDependencies": {},
+    "scripts": {},
+    "dependencies": {
+      "jquery": "~1.9.2"
+    }
+  }
+}
