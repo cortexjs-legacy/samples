@@ -29,37 +29,39 @@ cortex will ask you a bunch of questions, and using the default will be fine. If
 	|-index.js	// you module's entry file
 	|-package.json	// package info
 	
-#### Write the module
-In index.js, we want to export a method which will say hello to our world:
+#### Meet our best buddy - jquery
 
-	exports.sayHello=function(){
-		alert('hello world');
-	}
+Install jquery as the dependency, after the command finishes, you will find jquery appears in the dependencies field in pacakge.json
+
+	cortex install jquery --save	
+	
+	
+#### Write the module
+Our task is simple - append some text to the html body, so edit index.html
+
+	var $ = require('jquery');
+	$('body').html('hello world');
+	
 	
 #### Build the project
 Run 'cortex build' to build the project. In development , you can use 'cortex watch' to watch the changes of files, if any file changes, cortex will rebuild the project
 
 	cortex build
 	
-#### run your code
+#### Run the code
 
-Alter you test case in hello-world/test/spec/hello-world_test.js
 
-	describe("hello-world", function(){
-   		describe("hello-world.sayHello()", function(){
-      		it("should return 1", function(done){
-         		_use('hello-world@latest', function(exports) {
-                	exports.sayHello();
-            	});
-        	});
-    	});
-	});
+In hello-world/test/runner.html, include your module
 
-Run 'cortex server' to serve the module
+	facade({
+		mod:'hello-world'
+	})
+	
+Then run 'cortex server' to server the infrastructure module
 
 	cortex server
-	
-Finally open hello-world/test/runner.html in browser, your alert will be shown, done~
+		
+Finally open the file in browser, done~
 
 
 

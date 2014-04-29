@@ -37,7 +37,8 @@
     "asyncDependencies": {},
     "scripts": {},
     "dependencies": {
-      "jquery": "~1.9.2"
+      "jquery": "~1.9.2",
+      "neuron": "~4.5.0"
     }
   }
 }
