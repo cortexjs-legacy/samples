@@ -31,7 +31,7 @@ cortex will ask you a bunch of questions, and using the default will be fine. If
 	
 #### Meet our best buddy - jquery
 
-Install jquery as the dependency, after the command finishes, you will find jquery appears in the dependencies field in pacakge.json
+Install jquery as the dependency, after the command finishes, you will find jquery appears in the dependencies field in package.json
 
 	cortex install jquery --save	
 	
@@ -55,7 +55,7 @@ In hello-world/test/runner.html, include your module
 
 	facade({
 		mod:'hello-world'
-	})
+	});
 	
 Then run 'cortex server' to server the infrastructure module
 
